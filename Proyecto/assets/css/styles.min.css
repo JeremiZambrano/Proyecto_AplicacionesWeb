@@ -1,0 +1,303 @@
+/* Estilos para cuando el botón es hover */
+.btn:hover {
+  transform: scale(1.3); /* Escala el botón al 130% del tamaño original */
+  transition: 0.2s ease-in-out; /* Transición suave de 0.2 segundos */
+}
+
+/* Estilos para el botón primario cuando es hover */
+.btn-primary:hover {
+  color: #ededed; /* Color del texto */
+  background-color: #001a40; /* Color de fondo */
+  border-color: #001a40; /* Color del borde */
+}
+
+/* Estilos para el contenedor de contacto */
+.contact-clean {
+  background: #f1f7fc; /* Color de fondo */
+  padding: 80px 0; /* Espaciado interior */
+}
+
+/* Estilos para el formulario dentro del contenedor de contacto */
+.contact-clean form {
+  max-width: 480px; /* Ancho máximo */
+  width: 90%; /* Ancho del formulario */
+  margin: 0 auto; /* Centrar horizontalmente */
+  background-color: #fff; /* Color de fondo */
+  padding: 40px; /* Espaciado interior */
+  border-radius: 4px; /* Radio de borde */
+  color: #505e6c; /* Color del texto */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Media query para tamaños de pantalla pequeños */
+@media (max-width: 767px) {
+  .contact-clean {
+    padding: 20px 0; /* Reducción de espaciado interior */
+  }
+  .contact-clean form {
+    padding: 30px; /* Reducción de espaciado interior */
+  }
+}
+
+/* Estilos para el título del contenedor de contacto */
+.contact-clean h2 {
+  margin-top: 5px; /* Margen superior */
+  font-weight: 700; /* Grosor de la fuente */
+  font-size: 28px; /* Tamaño de la fuente */
+  margin-bottom: 36px; /* Margen inferior */
+  color: inherit; /* Color del texto */
+}
+
+/* Estilos para el último elemento del formulario */
+.contact-clean .form-group:last-child {
+  margin-bottom: 5px; /* Margen inferior */
+}
+
+/* Estilos para los controles de formulario dentro del formulario */
+.contact-clean form .form-control {
+  background: #fff; /* Color de fondo */
+  border-radius: 2px; /* Radio de borde */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05); /* Sombra */
+  outline: 0; /* Eliminar contorno al enfocar */
+  color: inherit; /* Color del texto */
+  padding-left: 12px; /* Espaciado izquierdo */
+  height: 42px; /* Altura */
+}
+
+/* Estilos para los controles de formulario cuando están enfocados */
+.contact-clean form .form-control:focus {
+  border: 1px solid #b2b2b2; /* Borde al estar enfocado */
+}
+
+/* Estilos para el área de texto dentro del formulario */
+.contact-clean form textarea.form-control {
+  min-height: 100px; /* Altura mínima */
+  max-height: 260px; /* Altura máxima */
+  padding-top: 10px; /* Espaciado superior */
+  resize: vertical; /* Permitir redimensionamiento vertical */
+}
+
+/* Estilos para los botones dentro del formulario */
+.contact-clean form .btn {
+  padding: 16px 32px; /* Espaciado interior */
+  border: none; /* Sin borde */
+  background: 0 0; /* Sin fondo */
+  box-shadow: none; /* Sin sombra */
+  text-shadow: none; /* Sin sombra de texto */
+  opacity: 0.9; /* Opacidad */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  font-weight: 700; /* Grosor de la fuente */
+  font-size: 13px; /* Tamaño de la fuente */
+  letter-spacing: 0.4px; /* Espaciado entre letras */
+  line-height: 1; /* Altura de línea */
+  outline: 0 !important; /* Eliminar contorno al enfocar */
+}
+
+/* Estilos para el botón dentro del formulario cuando es hover */
+.contact-clean form .btn:hover {
+  opacity: 1; /* Opacidad completa */
+}
+
+/* Estilos para el botón dentro del formulario cuando está activo */
+.contact-clean form .btn:active {
+  transform: translateY(1px); /* Desplazamiento hacia abajo */
+}
+
+/* Estilos para el botón primario dentro del formulario */
+.contact-clean form .btn-primary {
+  background-color: #055ada !important; /* Color de fondo */
+  margin-top: 15px; /* Margen superior */
+  color: #fff; /* Color del texto */
+}
+
+/* Estilos globales */
+* {
+  outline: 0; /* Eliminar contorno */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  font-family: Roboto, sans-serif; /* Fuente del texto */
+  font-size: 16px; /* Tamaño de la fuente */
+  line-height: 1.6; /* Altura de línea */
+}
+
+/* Estilos para resumir */
+summary {
+  list-style: none; /* Sin viñetas */
+}
+
+/* Estilos para los marcadores de detalles */
+summary::-webkit-details-marker,
+summary::marker {
+  display: none; /* Ocultar marcadores */
+}
+
+/* Estilos para el acordeón */
+.accordion {
+  width: 100%; /* Ancho completo */
+  max-width: 900px; /* Ancho máximo */
+  display: block; /* Mostrar como bloque */
+  margin: 0 auto; /* Centrar horizontalmente */
+  position: relative; /* Posición relativa */
+}
+
+/* Estilos para el acordeón completo */
+.accordion.full {
+  max-width: unset; /* Ancho máximo sin establecer */
+}
+
+/* Estilos para el título del acordeón */
+.accordion .accordion__title,
+.accordion .lab_accordion__title {
+  text-align: left; /* Alineación del texto a la izquierda */
+  font-size: 19px; /* Tamaño de la fuente */
+  color: #c3c3c3; /* Color del texto */
+  font-family: Roboto, sans-serif; /* Fuente del texto */
+  cursor: pointer; /* Cursor de apuntador */
+  position: relative; /* Posición relativa */
+  padding: 20px 30px 20px 10px; /* Espaciado interior */
+  line-height: 30px; /* Altura de línea */
+  text-transform: none; /* Sin transformación de texto */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Estilos para el icono dentro del título del acordeón */
+.accordion .accordion__title span,
+.accordion .lab_accordion__title span {
+  display: block; /* Mostrar como bloque */
+  position: absolute; /* Posición absoluta */
+  top: 50%; /* Posición desde la parte superior */
+  right: 0; /* Posición desde la derecha */
+  width: 30px; /* Ancho */
+  height: 30px; /* Altura */
+  transform: translateY(-50%); /* Desplazamiento vertical */
+}
+
+/* Estilos para los pseudo-elementos antes y después del icono */
+.accordion .accordion__title span:after,
+.accordion .accordion__title span:before,
+.accordion .lab_accordion__title span:after,
+.accordion .lab_accordion__title span:before {
+  content: ""; /* Contenido vacío */
+  position: absolute; /* Posición absoluta */
+  background-color: #c3c3c3; /* Color de fondo */
+  transition: transform 0.25s ease-out; /* Transición suave */
+}
+
+/* Estilos para el pseudo-elemento antes del icono */
+.accordion .accordion__title span:before,
+.accordion .lab_accordion__title span:before {
+  top: 0; /* Posición desde la parte superior */
+  left: 50%; /* Posición desde la izquierda */
+  width: 4px; /* Ancho */
+  height: 100%; /* Altura */
+  margin-left: -22px; /* Margen izquierdo negativo */
+}
+
+/* Estilos para el pseudo-elemento después del icono */
+.accordion .accordion__title span:after,
+.accordion .lab_accordion__title span:after {
+  top: 50%; /* Posición desde la parte superior */
+  left: -20px; /* Posición desde la izquierda */
+  width: 100%; /* Ancho */
+  height: 4px; /* Altura */
+  margin-top: -2px; /* Margen superior negativo */
+}
+
+/* Estilos para el acordeón abierto */
+.accordion[open] .accordion__title span:before,
+.accordion[open] .lab_accordion__title span:before {
+  transform: rotate(90deg); /* Rotar 90 grados */
+}
+
+/* Estilos para el acordeón abierto */
+.accordion[open] .accordion__title span:after,
+.accordion[open] .lab_accordion__title span:after {
+  transform: rotate(180deg); /* Rotar 180 grados */
+}
+
+/* Estilos para el contenido del acordeón */
+.accordion .accordion__content {
+  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 10px; /* Espaciado interior */
+  color: #c3c3c3; /* Color del texto */
+}
+
+/* Estilos específicos para navegadores con soporte táctil */
+@supports (-webkit-touch-callout: none) {
+  .accordion .accordion__title span:after,
+  .accordion .accordion__title span:before,
+  .accordion .lab_accordion__title span:after,
+  .accordion .lab_accordion__title span:before {
+    transition: none; /* Eliminar la transición */
+  }
+}
+
+/* Estilos para iconos Bootstrap */
+.bs-icon {
+  --bs-icon-size: 0.75rem; /* Tamaño del icono */
+  display: flex; /* Mostrar como flexbox */
+  flex-shrink: 0; /* No reducir al contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  font-size: var(--bs-icon-size); /* Tamaño de la fuente */
+  width: calc(var(--bs-icon-size) * 2); /* Ancho */
+  height: calc(var(--bs-icon-size) * 2); /* Altura */
+  color: var(--bs-primary); /* Color del icono */
+}
+
+/* Estilos para iconos Bootstrap de tamaño extra pequeño */
+.bs-icon-xs {
+  --bs-icon-size: 1rem; /* Tamaño del icono */
+  width: calc(var(--bs-icon-size) * 1.5); /* Ancho */
+  height: calc(var(--bs-icon-size) * 1.5); /* Altura */
+}
+
+/* Estilos para iconos Bootstrap de tamaño pequeño */
+.bs-icon-sm {
+  --bs-icon-size: 1rem; /* Tamaño del icono */
+}
+
+/* Estilos para iconos Bootstrap de tamaño mediano */
+.bs-icon-md {
+  --bs-icon-size: 1.5rem; /* Tamaño del icono */
+}
+
+/* Estilos para iconos Bootstrap de tamaño grande */
+.bs-icon-lg {
+  --bs-icon-size: 2rem; /* Tamaño del icono */
+}
+
+/* Estilos para iconos Bootstrap de tamaño extra grande */
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem; /* Tamaño del icono */
+}
+
+/* Estilos para iconos Bootstrap de color primario */
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white); /* Color del icono */
+  background: var(--bs-primary); /* Color de fondo */
+}
+
+/* Estilos para iconos Bootstrap de color primario claro */
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary); /* Color del icono */
+  background: rgba(var(--bs-primary-rgb), 0.2); /* Color de fondo */
+}
+
+/* Estilos para iconos Bootstrap semi-blancos */
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary); /* Color del icono */
+  background: rgba(255, 255, 255, 0.5); /* Color de fondo */
+}
+
+/* Estilos para iconos Bootstrap redondeados */
+.bs-icon.bs-icon-rounded {
+  border-radius: 0.5rem; /* Radio de borde */
+}
+
+/* Estilos para iconos Bootstrap circulares */
+.bs-icon.bs-icon-circle {
+  border-radius: 50%; /* Radio de borde */
+}
